@@ -15,3 +15,7 @@
     display: inline;
     padding: 20px;
 }
+.link{
+    text-decoration: none;
+    color: rgba(154, 156, 233, 1);
+}
