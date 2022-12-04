@@ -1,0 +1,17 @@
+.navbar{
+    height: 86px;
+    padding: 8px 50px;
+    gap: 43px;
+    color: rgba(154, 156, 233, 1);
+    background-color:aliceblue;
+    margin: 0px;
+}
+.list{
+   margin: 0PX;
+   padding: 0px;
+   
+}
+.list-item{
+    display: inline;
+    padding: 20px;
+}
