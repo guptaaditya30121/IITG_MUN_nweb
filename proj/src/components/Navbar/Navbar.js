@@ -35,10 +35,10 @@ export default function Navbar() {
         <div className="btn-group dropstart">
           <i className={toggle ? 'fas fa-times' : 'fas fa-bars'} data-bs-toggle="dropdown" aria-expanded="false"></i>
           <ul className="dropdown-menu edit">
-            <li><a className="dropdown-item edit " href="#">HOME</a></li>
-            <li><a className="dropdown-item edit" href="#">ABOUT US</a></li>
-            <li><a className="dropdown-item edit" href="#">APPLY</a></li>
-            <li><a className="dropdown-item edit" href="#">MORE</a></li>
+            <li><a className="dropdown-item edit " href="#" onClick={handletoggle}>HOME</a></li>
+            <li><a className="dropdown-item edit" href="#" onClick={handletoggle}>ABOUT US</a></li>
+            <li><a className="dropdown-item edit" href="#" onClick={handletoggle}>APPLY</a></li>
+            <li><a className="dropdown-item edit" href="#" onClick={handletoggle}>MORE</a></li>
 
           </ul>
         </div>
