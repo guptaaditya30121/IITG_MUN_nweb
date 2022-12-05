@@ -63,3 +63,6 @@
 .not-active{
     display: none;
 }
+.edit{
+    color: rgba(154, 156, 233, 1);;
+}
