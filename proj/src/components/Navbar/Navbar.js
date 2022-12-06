@@ -1,48 +1,61 @@
-import React, { useState } from 'react';
+import React, {useState, useEffect} from 'react';
+import { Squash as Hamburger } from 'hamburger-react'
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import './Navbar.css';
 //import '../assets/logo.png';
 export default function Navbar() {
-  const [toggle, changetoggle] = useState(false);
-  const handletoggle = () => changetoggle(!toggle);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', changeWidth)
+    return () => {
+        window.removeEventListener('resize', changeWidth)
+    }
+
+  },[])
+
   return (
-    <div className='navbar'>
-      <img src={require('../assets/logo.png')} alt="not_found" className='logo'></img>
-
+    <div className='navbar'>      
+      <img src={ require('../assets/logo.png')} alt="not_found" className='logo'></img>
+      {(screenWidth > 700) && (
       <ul className='list'>
-        <li><a className='link' href='www.google.com'>HOME</a></li>
-        <li><a className='link' href='www.google.com'>ABOUT US</a></li>
-        <li><a className='link' href='www.google.com'>APPLY</a></li>
-        <li><a className='link' href='www.google.com'>MORE</a>
-          {/* <div className='sub-list'>
-              <ul>
-                <li>fsd</li>
-                <li>fsd</li>
-                <li>fsd</li>
-
-              </ul>
-              </div>*/}
+        <li className='list-item'>HOME</li>
+        <li className='list-item'>ABOUT US</li>
+        <li className='list-item'>APPLY</li>
+        <li className='list-item'>APPLY</li>
+        <li className='list-item' id ='special'>
+          <DropdownButton id="dropdown-basic-button" title="MORE">
+            <div class ="extra-items">
+              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+            </div>
+          </DropdownButton>
         </li>
-
       </ul>
-      <div className="menu-icon" onClick={handletoggle}>
-        {/* <i className={toggle ? 'fas fa-times' : 'fas fa-bars'} />
-            <ul className={toggle ? 'active':'not-active'}>
-            <li><a className='link2' href='www.google.com'>HOME    </a></li>
-            <li><a className='link2' href='www.google.com'>ABOUT US </a></li>
-            <li><a className='link2' href='www.google.com'>APPLY   </a></li>
-            <li><a className='link2' href='www.google.com'>MORE</a></li>
-            </ul> */}
-        <div className="btn-group dropstart">
-          <i className={toggle ? 'fas fa-times' : 'fas fa-bars'} data-bs-toggle="dropdown" aria-expanded="false"></i>
-          <ul className="dropdown-menu edit">
-            <li><a className="dropdown-item edit " href="#" onClick={handletoggle}>HOME</a></li>
-            <li><a className="dropdown-item edit" href="#" onClick={handletoggle}>ABOUT US</a></li>
-            <li><a className="dropdown-item edit" href="#" onClick={handletoggle}>APPLY</a></li>
-            <li><a className="dropdown-item edit" href="#" onClick={handletoggle}>MORE</a></li>
-
-          </ul>
-        </div>
-      </div>
+      )}
+      {screenWidth<=700 && (
+          <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
+            <div class ="extra-items">
+              <Dropdown.Item href="#">HOME</Dropdown.Item>
+              <Dropdown.Item href="#">ABOUT US</Dropdown.Item>
+              <Dropdown.Item href="#">APPLY</Dropdown.Item>
+              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+            </div>
+          </DropdownButton>
+        
+        
+      )}
+      
+      
     </div>
+    
   );
 }
