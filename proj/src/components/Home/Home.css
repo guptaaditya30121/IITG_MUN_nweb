@@ -5,11 +5,15 @@
 .hero
 {
     display: flex;
-    justify-content: center;
     gap: 20px;
     background-color: var(--hero-2);
     margin: 20px;
     border-radius: 15px;
+}
+
+#mobile
+{
+    justify-content: center;
 }
 
 #hero-img

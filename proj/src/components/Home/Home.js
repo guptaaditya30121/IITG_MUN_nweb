@@ -17,7 +17,7 @@ const Home = () => {
       },[])
     return ( 
         <div className="Home">
-            <div className="hero">
+            <div className="hero" id = {screenWidth>750?"desktop":"mobile"}>
 
                 {(screenWidth > 750) && (<img src={require('../assets/hero_img.png')} alt='not_found' id = "hero-img"></img>)}
                 <div className= "mun">
