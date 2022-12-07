@@ -5,6 +5,7 @@
 .hero
 {
     display: flex;
+    justify-content: center;
     gap: 20px;
     background-color: var(--hero-2);
     margin: 20px;
@@ -22,6 +23,7 @@
 
 .mun
 {
+    border-radius: 15px;
     display: block;
     overflow: hidden;
     max-width: 500px;
@@ -30,11 +32,11 @@
     background-color: var(--hero-2);
     align-self: center; 
     text-align: center;
-    /* padding: 3%; */
+
 }
 
 #mun-1
-{
+{ 
     color: var(--primary-text);
     background-color: var(--hero-2);
     font-size: 50px;

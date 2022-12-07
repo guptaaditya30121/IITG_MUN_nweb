@@ -1,12 +1,25 @@
 
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Home.css';
 
 const Home = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    useEffect(() => {
+    
+        const changeWidth = () => {
+          setScreenWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', changeWidth)
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    
+      },[])
     return ( 
         <div className="Home">
             <div className="hero">
-                <img src={require('../assets/hero_img.png')} alt='not_found' id = "hero-img"></img>
+
+                {(screenWidth > 750) && (<img src={require('../assets/hero_img.png')} alt='not_found' id = "hero-img"></img>)}
                 <div className= "mun">
                     <h2 id ="mun-1">IITG MUN</h2>
                     <h1 id = "mun-2">2023</h1>
