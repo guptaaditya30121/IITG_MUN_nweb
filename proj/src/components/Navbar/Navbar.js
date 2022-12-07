@@ -28,7 +28,7 @@ export default function Navbar() {
     {
       setTheme("dark-theme");
       setLogo(require("../assets/dark-logo.png"))
-      setButton((require("../assets/Subtract.png")))
+      setButton((require("../assets/Sun_light.png")))
       
     }
     else
