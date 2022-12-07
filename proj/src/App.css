@@ -1,0 +1,13 @@
+.light-theme
+{
+    --nav-primary-color : #082B4B;
+    --nav-background-color-1 :#EE6C4D;
+    --nav-background-color-2:#FDE3C7;
+}
+
+.dark-theme
+{
+    --nav-primary-color : #F2B995;
+    --nav-background-color-1 :#082B4B;
+    --nav-background-color-2:#54739B;
+}

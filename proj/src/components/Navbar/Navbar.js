@@ -6,8 +6,13 @@ import './Navbar.css';
 //import '../assets/logo.png';
 export default function Navbar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [theme,setTheme] = useState('light-theme')
+  const[logo,setLogo] = useState(require('../assets/Light-logo.png'))
+  const[button,setButton] = useState(require("../assets/Moon_light.png"))
+
 
   useEffect(() => {
+    document.body.className = theme;
 
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
@@ -17,12 +22,30 @@ export default function Navbar() {
         window.removeEventListener('resize', changeWidth)
     }
 
-  },[])
+  },[theme])
+  const toggleTheme = () => {
+    if(theme === "light-theme")
+    {
+      setTheme("dark-theme");
+      setLogo(require("../assets/dark-logo.png"))
+      setButton((require("../assets/Subtract.png")))
+      
+    }
+    else
+    {
+      setTheme("light-theme");
+      setLogo(require("../assets/Light-logo.png"))
+      setButton((require("../assets/Moon_light.png")))
+    }
+  }
+   
+
+
 
   return (
     <div className='navbar'>      
-      <img src={ require('../assets/logo.png')} alt="not_found" className='logo'></img>
-      {(screenWidth > 700) && (
+      <img src={logo} alt="not_found" className='logo'></img>
+      {(screenWidth > 750) && (
       <ul className='list'>
         <li className='list-item'>HOME</li>
         <li className='list-item'>ABOUT US</li>
@@ -37,9 +60,12 @@ export default function Navbar() {
             </div>
           </DropdownButton>
         </li>
+        <li className='list-item' onClick={()=> toggleTheme()}>
+          <img src = {button} alt ="Not_found" className='theme-button' ></img>
+        </li>
       </ul>
       )}
-      {screenWidth<=700 && (
+      {screenWidth<=750 && (
           <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
             <div class ="extra-items">
               <Dropdown.Item href="#">HOME</Dropdown.Item>
