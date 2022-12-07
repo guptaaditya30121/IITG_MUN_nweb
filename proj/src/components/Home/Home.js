@@ -17,7 +17,7 @@ const Home = () => {
       },[])
     return ( 
         <div className="Home">
-            <div className="hero">
+            <div className="hero" id = {screenWidth>750?"desktop":"mobile"}>
 
                 {(screenWidth > 750) && (<img src={require('../assets/hero_img.png')} alt='not_found' id = "hero-img"></img>)}
                 <div className= "mun">
@@ -32,6 +32,23 @@ const Home = () => {
                 <h3 id = "quote-1">"What verse shall be yours?"</h3>
                 <h4>O me! O life! Walt Whitman </h4>
                 <h4>Dead Poets Society</h4>
+            </div>
+            <div className="stats">
+                <div className="stat">
+                    <h2>560+</h2>
+                    <h4>Delegates</h4>
+                    <h5>From all over india</h5>
+                </div>
+                <div className="stat">
+                    <h2>35+</h2>
+                    <h4>Executive Board</h4>
+                    <h5>Overall</h5>
+                </div>
+                <div className="stat">
+                    <h2>21+</h2>
+                    <h4>International Press</h4>
+                    <h5>From country and beyond</h5>
+                </div>
             </div>
         </div>
      );
