@@ -1,0 +1,23 @@
+.light-theme
+{
+    --nav-primary-color : #082B4B;
+    --nav-background-color-1 :#EE6C4D;
+    --nav-background-color-2:#FDE3C7;
+    --primary-text:#54739B;
+    --secondary-text:#EB6E52;
+    --home-background-color:#A5CCE2; 
+    --hero-1:#fde3c800;
+    --hero-2:#fde3c8;
+}
+
+.dark-theme
+{
+    --nav-primary-color : #F2B995;
+    --nav-background-color-1 :#082B4B;
+    --nav-background-color-2:#54739B;
+    --home-background-color:#54739B; 
+    --primary-text:#EB6E52;
+    --secondary-text:#EB6E52;
+    --hero-1:#082B4B00;
+    --hero-2:#082B4B;
+}
