@@ -67,3 +67,38 @@
     background-color: var(--hero-2);
     font-size: 25px;
 }
+
+.quote
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 97%;
+    height: 250px;
+    padding: 20px;
+    margin-left: 1.5%;
+    margin-top: 3%;
+    background-color: var(--hero-2);
+    align-self: center; 
+    text-align: center;
+    border-radius: 15px;
+}
+
+.quote h3
+{
+    color: var(--secondary-text);
+    background-color: var(--hero-2);
+}
+
+.quote h4
+{
+    color: var(--secondary-text);
+    background-color: var(--hero-2);
+}
+
+#quote-1
+{
+    color: var(--primary-text);
+    padding-bottom: 2%;
+}

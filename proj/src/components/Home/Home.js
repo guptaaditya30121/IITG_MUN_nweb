@@ -14,6 +14,12 @@ const Home = () => {
                     <h4 id = "mun-4">3rd- 5th February</h4>
                 </div>
             </div>
+            <div className="quote">
+                <h3>"That the powerfull play goes on, and you may contribute a verse"</h3>
+                <h3 id = "quote-1">"What verse shall be yours?"</h3>
+                <h4>O me! O life! Walt Whitman </h4>
+                <h4>Dead Poets Society</h4>
+            </div>
         </div>
      );
 }
