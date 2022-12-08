@@ -1,0 +1,23 @@
+.footer
+{
+    width: 100%;
+    background-color: var(--home-background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 96%;
+    height: 400px;
+    padding: 50px;
+    margin-left: 2%;
+    margin-top: 3%;
+    align-self: center; 
+    text-align: center;
+}
+
+.footer img
+{
+    align-self: center;
+    color:black;
+}
