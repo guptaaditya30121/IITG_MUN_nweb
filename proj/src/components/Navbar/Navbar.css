@@ -20,12 +20,15 @@
    margin: 0PX;
    padding: 0px;
    display: flex;
+   align-items: center;
    background-color: var(--nav-background-color);
 }
 .list-item{
+    list-style-type: none;
     display: inline;
     padding: 20px;
     padding-left: 30px;
+    padding-top: 10px;
     cursor: pointer;
     font-size: 18px;
     background-color: var(--nav-background-color);
@@ -62,6 +65,7 @@
     background-color: var(--nav-background-color);
 }
 #special{
+    padding-top: 15px;
     width: 85px;
     background-color: var(--nav-background-color);
 }
@@ -75,7 +79,7 @@
     
 }
 .dropdown-menu{
-    background-color: var(--nav-background-color-1);
+    background-color: var(--home-background-color);
     border: none;
 }
 .dropdown-item:hover{
@@ -83,6 +87,7 @@
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
+    color: var(--primary-text);
 }
 .dropdown-toggle{
     display: flex;
