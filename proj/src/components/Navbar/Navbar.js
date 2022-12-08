@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <div className='navbar'>      
       <img src={logo} alt="not_found" className='logo'></img>
-      {(screenWidth > 750) && (
+      {(screenWidth > 800) && (
       <ul className='list'>
         <li className='list-item'>HOME</li>
         <li className='list-item'>ABOUT US</li>
@@ -59,13 +59,13 @@ export default function Navbar() {
               <Dropdown.Item href="#">LABEL</Dropdown.Item>
             </div>
           </DropdownButton>
-        </li>
+        </li> 
         <li className='list-item' onClick={()=> toggleTheme()}>
           <img src = {button} alt ="Not_found" className='theme-button' ></img>
         </li>
       </ul>
       )}
-      {screenWidth<=750 && (
+      {screenWidth<=800 && (
           <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
             <div class ="extra-items">
               <Dropdown.Item href="#">HOME</Dropdown.Item>
