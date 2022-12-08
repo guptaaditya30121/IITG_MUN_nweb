@@ -17,6 +17,8 @@ const Home = () => {
       },[])
     return ( 
         <div className="Home">
+            {(screenWidth > 750) &&<div className="eclipse"></div>}
+            {(screenWidth > 750) &&<div className="eclipse-2"></div>}
             <div className="hero" id = {screenWidth>750?"desktop":"mobile"}>
 
                 {(screenWidth > 750) && (<img src={require('../assets/hero_img.png')} alt='not_found' id = "hero-img"></img>)}
@@ -48,6 +50,44 @@ const Home = () => {
                     <h2>21+</h2>
                     <h4>International Press</h4>
                     <h5>From country and beyond</h5>
+                </div>
+            </div>
+            <div className="reviews">
+                <h2>Reviews</h2>
+                <div className="review">
+                    <div className="rev">
+                        <div className="stars">
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                        </div>
+                        <p>"It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words." </p>
+                        <h5>-Vishwaprasanna Hariharan</h5>
+                    </div>
+                    <div className="rev">
+                        <div className="stars">
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                        </div>
+                        <p>"Yes, the IITG MUN has amazing discussions, but the best part of this MUN has to be the people. We are united by the strongest bond of common interests. Continuous open dialogue with people we only know by country names during the conference and the supportive MUN community is, by far, its most beautiful part."  </p>
+                        <h5>-Ariktha Srivathsan</h5>
+                    </div>
+                    <div className="rev">
+                        <div className="stars">
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                            <span className="star">&#9733;</span>
+                        </div>
+                        <p>"A Great platform to gain knowledge about the way things are being operated in the real world and to discuss its pros and cons"  </p>
+                        <h5>-Sudhanshu Bhatia</h5>
+                    </div>
                 </div>
             </div>
         </div>

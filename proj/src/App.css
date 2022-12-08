@@ -8,6 +8,7 @@
     --home-background-color:#A5CCE2; 
     --hero-1:#fde3c800;
     --hero-2:#fde3c8;
+    --eclipse:#F8EEE3;
 }
 
 .dark-theme
@@ -20,4 +21,5 @@
     --secondary-text:#F8EEE3;
     --hero-1:#082B4B00;
     --hero-2:#082B4B;
+    --eclipse:#082B4B;
 }
