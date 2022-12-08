@@ -235,3 +235,27 @@
     text-align: left;
     margin-left: 5%;
 }
+
+.eclipse
+{
+    position: absolute;
+width: 1100px;
+height: 1100px;
+left: -466px;
+top: -400px;
+
+background: var(--eclipse);
+filter: blur(200px);
+}
+
+.eclipse-2
+{
+    position: absolute;
+    width: 613px;
+    height: 613px;
+    left: 1116px;
+    top: 800px;
+
+    background: var(--eclipse);
+    filter: blur(200px);
+}
