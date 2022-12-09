@@ -6,7 +6,7 @@ import './Navbar.css';
 //import '../assets/logo.png';
 export default function Navbar() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-  const [theme,setTheme] = useState('light-theme')
+  const [theme,setTheme] = useState('dark-theme')
   const[logo,setLogo] = useState(require('../assets/Light-logo.png'))
   const[button,setButton] = useState(require("../assets/Moon_light.png"))
 
