@@ -9,6 +9,7 @@
     --hero-1:#fde3c800;
     --hero-2:#fde3c8;
     --eclipse:#F8EEE3;
+    --footer:#F8EEE3;
 }
 
 .dark-theme
@@ -22,4 +23,5 @@
     --hero-1:#082B4B00;
     --hero-2:#082B4B;
     --eclipse:#082B4B;
+    --footer:#F2B995;
 }
