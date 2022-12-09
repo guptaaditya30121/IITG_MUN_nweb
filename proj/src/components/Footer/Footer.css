@@ -11,7 +11,7 @@
     height: 400px;
     padding: 50px;
     margin-left: 2%;
-    margin-top: 3%;
+    margin-top: 4%;
     align-self: center; 
     text-align: center;
 }
@@ -19,5 +19,28 @@
 .footer img
 {
     align-self: center;
-    color:black;
+}
+.icons
+{
+    display: flex;
+    gap: 60px;
+    padding: 8%;
+    justify-content: center;
+}
+
+#insta
+{
+    color: var(--home-background-color);
+    background-color: var(--footer);
+}
+
+#facebook
+{
+    color: var(--home-background-color);
+    background-color: var(--footer);
+}
+
+#twitter
+{
+    color: var(--footer);
 }
