@@ -12,6 +12,7 @@
     background-color: var(--hero-2);
     margin: 2%;
     border-radius: 15px;
+    min-height: 400px;
 }
 
 #mobile
@@ -46,7 +47,7 @@
 { 
     color: var(--primary-text);
     background-color: var(--hero-2);
-    font-size: 50px;
+    font-size: 300%;
     font-weight: bolder;
     padding: 0%;
     margin: 0%;
@@ -57,7 +58,7 @@
     margin: 0%;
     color: var(--primary-text);
     background-color: var(--hero-2);
-    font-size: 90px;
+    font-size: 540%;
     font-weight: bolder;
 }
 #mun-3
@@ -66,7 +67,7 @@
     margin: 0%;
     color: var(--primary-text);
     background-color: var(--hero-2);
-    font-size: 25px;
+    font-size: 150%;
 }
 #mun-4
 {
@@ -74,7 +75,7 @@
     margin: 0%;
     color: var(--primary-text);
     background-color: var(--hero-2);
-    font-size: 25px;
+    font-size: 150%;
 }
 
 .quote
@@ -114,10 +115,11 @@
 
 .stats
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
     margin: 1.5%;
-    gap: 2rem;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .stat
@@ -126,9 +128,9 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    margin-left: 1.5%;
+    margin-left: 1%;
     margin-top: 3%;
-    width: 100%;
+    min-width: 400px;
     height: 400px;
     /* background-color: var(--hero-2); */
     background-image: radial-gradient(var(--hero-2)45%,var(--home-background-color)60%);
@@ -258,4 +260,38 @@ filter: blur(200px);
 
     background: var(--eclipse);
     filter: blur(200px);
+}
+
+
+@media(max-width:790px)
+{
+    #mun-1
+    { 
+        font-size: 30px;
+    }
+    #mun-2
+    {
+        font-size: 54px;
+        font-weight: bolder;
+    }
+    #mun-3
+    {
+        font-size: 15px;
+    }
+    #mun-4
+    {
+        font-size: 15px;
+    }
+    .stat h2
+    {
+        font-size: 80px;
+    }
+    .stat h4
+    {
+        font-size: 20px;
+    }
+    .stat h5
+    {
+        font-size: small;
+    }
 }
