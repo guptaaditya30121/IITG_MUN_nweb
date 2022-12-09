@@ -1,0 +1,53 @@
+*{
+    background-color: var(--home-background-color);
+}
+
+.eclipse
+{
+    position: absolute;
+width: 1100px;
+height: 1100px;
+left: -466px;
+top: -400px;
+
+background: var(--eclipse);
+filter: blur(200px);
+}
+
+
+.banner
+{
+    display: grid;
+    grid-template-columns: 1.5278vw 46vw 52.5vw;
+    gap: 0px;
+}
+.leftBlock
+{
+    z-index: 1;
+    height: 3.8194vw;
+    margin-top: 4vw;
+    background-color: var(--about-1);
+}
+
+.banner h1
+{
+    margin-top: 2.75vw;
+    margin-bottom: 2vw;
+    margin-left: 1.5vw;
+    background: none;
+    z-index: 1;
+    color: var(--about-1);
+    font-size: 4.8vw;
+    font-weight: 700;
+    word-spacing: 0.3em;
+    align-self: center;
+}
+
+.rightBlock
+{
+    margin-left: 0;
+    z-index: 1;
+    height: 3.8194vw;
+    margin-top: 4vw;
+    background-image: linear-gradient(to right, var(--about-1) , var(--about-2));
+}
