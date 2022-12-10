@@ -1,6 +1,7 @@
 export const people = [{
     name: 'Shankar',
-    id: 1,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -8,7 +9,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 2,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -16,7 +18,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 3,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -24,7 +27,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 4,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -32,7 +36,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 5,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -40,7 +45,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 6,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -48,7 +54,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 7,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -56,7 +63,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 8,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -64,7 +72,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 9,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -72,7 +81,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 10,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
@@ -80,7 +90,8 @@ export const people = [{
     link_linkedin: 'fjsnkjdj'
   },{
     name: 'Shankar',
-    id: 11,
+    status: 1,
+    id : 1,
     post: 'General Secretary',
     img_url: 'https://i.imgur.com/Mx7dA2Y.jpg',
     alt: 'shankar',
