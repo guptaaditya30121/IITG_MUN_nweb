@@ -27,15 +27,15 @@ export default function Secretariat() {
       };
       const listItems = people.map(person =>
         <div className="profile" onMouseOver={()=>{person.status=0; setIsHovering(true); }} onMouseOut={()=>{person.status=1; setIsHovering(false);}}>
-                            <img src={person.img_url} className="prof_img"></img>
+                            <img src={person.img_url} alt = "Not found"className="prof_img"></img>
                             {person.status&& (<div className="initial">
                                 <div className='info'>{person.name}</div>
                                 <div className='subinfo'>{person.post}</div>
                             </div>)}
-                            {person.status==0 && (<div className="final">
+                            {person.status===0 && (<div className="final">
                                 <div className='info2'>{person.name}</div>
                                 <div className='subinfo2'>{person.post}</div>
-                                <a href="www.google.com"><InstagramIcon id="insta" color='disabled'/></a>
+                                <a href="www.google.com"><InstagramIcon id="insta1" color='disabled'/></a>
                                 <a href="www.google.com"><LinkedInIcon id="linkedin"/></a>
                             </div>)}
                         </div>);

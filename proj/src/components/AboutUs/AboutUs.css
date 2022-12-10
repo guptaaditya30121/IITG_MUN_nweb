@@ -17,8 +17,8 @@ filter: blur(200px);
 
 .banner
 {
-    display: grid;
-    grid-template-columns: 1.5278vw 46vw 52.5vw;
+    display: flex;
+    justify-content: space-around;
     gap: 0px;
 }
 .leftBlock
@@ -26,21 +26,27 @@ filter: blur(200px);
     z-index: 1;
     height: 3.8194vw;
     margin-top: 4vw;
+    width: 3%;
     background-color: var(--about-1);
 }
 
-.banner h1
+.text-about
 {
-    margin-top: 2.75vw;
+    margin-top: 2.25vw;
     margin-bottom: 2vw;
-    margin-left: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     background: none;
+    padding: 0px;
     z-index: 1;
     color: var(--about-1);
     font-size: 4.8vw;
     font-weight: 700;
     word-spacing: 0.3em;
+    display: flex;
     align-self: center;
+    text-align: center;
+    width: fit-content;
 }
 
 .rightBlock
@@ -49,5 +55,30 @@ filter: blur(200px);
     z-index: 1;
     height: 3.8194vw;
     margin-top: 4vw;
+    width: 58%;
     background-image: linear-gradient(to right, var(--about-1) , var(--about-2));
+}
+
+.about
+{
+    width: 93%;
+    margin-left: 3.5%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.about p
+{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 520;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+background-color: transparent;
+color: var(--about-1);
+z-index: 1;
 }
