@@ -29,3 +29,6 @@
     --about-1:#F8EEE3;
     --about-2:#EE6C4D;
 }
+body{
+    overflow-x: hidden;
+}
