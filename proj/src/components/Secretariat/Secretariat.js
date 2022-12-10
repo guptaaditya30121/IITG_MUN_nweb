@@ -1,49 +1,66 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './Secretariat.css';
-function Profile(){
-    return(
-        <>
-            <div className="profile">
-
-            </div>
-        </>
-    );
-}
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import {people} from './data.js';
 export default function Secretariat() {
+    const [isHovering, setIsHovering] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     useEffect(() => {
-    
+
         const changeWidth = () => {
-          setScreenWidth(window.innerWidth);
+            setScreenWidth(window.innerWidth);
         }
+        
         window.addEventListener('resize', changeWidth)
         return () => {
             window.removeEventListener('resize', changeWidth)
         }
+
+    }, [])
+    const handleMouseOver = () => {
+        setIsHovering(true);
+      };
     
-      },[])
-  return (
-    <>
-    <div className='page'>
-            {(screenWidth > 750) &&<div className="eclipse"></div>}
-            {(screenWidth > 750) &&<div className="eclipse-2"></div>}
-            {(screenWidth > 750) &&<div className="heading">
-                <div className="block1"></div>
-                <div className="text">
-                    THE SECRETARIAT
-                </div>
-                <div className="block2"></div>
-            </div>}
-            {(screenWidth < 750) && <div className="text2">
+      const handleMouseOut = () => {
+        setIsHovering(false);
+      };
+      const listItems = people.map(person =>
+        <div className="profile" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                            <img src={person.img_url} className="prof_img"></img>
+                            {!isHovering && (<div className="initial">
+                                <div className='info'>{person.name}</div>
+                                <div className='subinfo'>{person.post}</div>
+                            </div>)}
+                            {isHovering && (<div className="final">
+                                <div className='info2'>{person.name}</div>
+                                <div className='subinfo2'>{person.post}</div>
+                                <InstagramIcon id="insta" color='disabled'/>
+                                <LinkedInIcon id="linkedin" />
+                            </div>)}
+                        </div>);
+    return (
+        <> 
+            <div className='page'>
+                {(screenWidth > 750) && <div className="eclipse"></div>}
+                {(screenWidth > 750) && <div className="eclipse-2"></div>}
+                {(screenWidth > 750) && <div className="heading">
+                    <div className="block1"></div>
+                    <div className="text">
+                        THE SECRETARIAT
+                    </div>
+                    <div className="block2"></div>
+                </div>}
+                {(screenWidth < 750) && <div className="text2">
                     THE SECRETARIAT
                 </div>}
-            <div className="list_people">
-
+                <div className="list_people">
+                    
+                        {listItems}
+                    
+                </div>
             </div>
-    </div>
-    <div className="profile">
-        mfkdskl
-    </div>
-    </>
-  );
+
+        </>
+    );
 }
