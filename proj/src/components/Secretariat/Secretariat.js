@@ -3,9 +3,31 @@ import './Secretariat.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import {people} from './data.js';
+import sanityClient from "../../client";   
 export default function Secretariat() {
     const [isHovering, setIsHovering] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const [ppeople, setPpeople] = useState(null);
+
+    useEffect(() => {
+		sanityClient
+			.fetch(
+				`*[_type == "secretariat"]{
+					_id,
+                    name,
+                    post,
+                    img_url,
+                    status,
+                    id,
+                    alt,
+                    link_insta,
+                    link_linkedin,
+                }`
+			)
+			.then((data) => setPpeople(data))
+			.catch(console.error);
+	}, []);
+
     useEffect(() => {
 
         const changeWidth = () => {
