@@ -33,6 +33,14 @@
     font-size: 18px;
     background-color: var(--nav-background-color);
 }
+.link-item{
+    text-decoration: none;
+    background-color: var(--nav-background-color);
+    color: var(--nav-primary-color);
+}
+.link-item:hover{
+    color: var(--nav-primary-color);
+}
 .list-item:hover{
     font-style: italic;
     font-weight: bold;

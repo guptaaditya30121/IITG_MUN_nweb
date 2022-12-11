@@ -1,4 +1,3 @@
-
 import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
@@ -10,17 +9,15 @@ import AboutUs from './components/AboutUs/AboutUs';
 function App() {
   return (
     <>
-    <Navbar/>
-    
     <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/secretariat" element={<Secretariat/>}/>
         <Route exact path="/about-us" element={<AboutUs/>}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
-  
-  <Footer />
   </>
   );
 }

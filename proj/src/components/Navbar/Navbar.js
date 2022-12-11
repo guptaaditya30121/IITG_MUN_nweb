@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import {Outlet, Link} from "react-router-dom";
 import './Navbar.css';
 //import '../assets/logo.png';
 export default function Navbar() {
@@ -44,19 +45,19 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>      
-      <img src={logo} alt="not_found" className='logo'></img>
-      {(screenWidth > 800) && (
+      <a className='link-item' href= "/"><img src={logo} alt="not_found" className='logo'></img></a>
+      {(screenWidth > 900) && (
       <ul className='list'>
-        <li className='list-item'>HOME</li>
-        <li className='list-item'>ABOUT US</li>
-        <li className='list-item'>APPLY</li>
-        <li className='list-item'>APPLY</li>
+        <li className='list-item'><a href="/" className='link-item'>HOME</a></li>
+        <li className='list-item'><a href="/about-us" className='link-item'>ABOUT US</a></li>
+        <li className='list-item'><a href="/apply" className='link-item'>APPLY</a></li>
+        <li className='list-item'><a href="/secretariat" className='link-item'>SECRETARIAT</a></li>
         <li className='list-item' id ='special'>
           <DropdownButton id="dropdown-basic-button" title="MORE">
             <div class ="extra-items">
-              <Dropdown.Item href="#">LABEL</Dropdown.Item>
-              <Dropdown.Item href="#">LABEL</Dropdown.Item>
-              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+              <Dropdown.Item href="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
+              <Dropdown.Item href="/gallery">GALLERY</Dropdown.Item>
+              <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
             </div>
           </DropdownButton>
         </li> 
@@ -65,22 +66,21 @@ export default function Navbar() {
         </li>
       </ul>
       )}
-      {screenWidth<=800 && (
+      {screenWidth<=900 && (
           <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
             <div class ="extra-items">
-              <Dropdown.Item href="#">HOME</Dropdown.Item>
-              <Dropdown.Item href="#">ABOUT US</Dropdown.Item>
-              <Dropdown.Item href="#">APPLY</Dropdown.Item>
-              <Dropdown.Item href="#">LABEL</Dropdown.Item>
-              <Dropdown.Item href="#">LABEL</Dropdown.Item>
-              <Dropdown.Item href="#">LABEL</Dropdown.Item>
+              <Dropdown.Item href="/">HOME</Dropdown.Item>
+              <Dropdown.Item href="/about-us">ABOUT US</Dropdown.Item>
+              <Dropdown.Item href="/apply">APPLY</Dropdown.Item>
+              <Dropdown.Item href="/secretariat">SECRETARIAT</Dropdown.Item>
+              <Dropdown.Item href="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
+              <Dropdown.Item href="/gallery">GALLERY</Dropdown.Item>
+              <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
             </div>
           </DropdownButton>
         
         
       )}
-      
-      
     </div>
     
   );
