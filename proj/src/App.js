@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import Secretariat from './components/Secretariat/Secretariat'
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
+import Notfound from './components/Notfound/Notfound';
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/home" element={<Home/>}/>
         <Route exact path="/secretariat" element={<Secretariat/>}/>
         <Route exact path="/about-us" element={<AboutUs/>}/>
+        <Route path="*" element={<Notfound/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
