@@ -48,10 +48,10 @@ export default function Navbar() {
       <a className='link-item' href= "/"><img src={logo} alt="not_found" className='logo'></img></a>
       {(screenWidth > 900) && (
       <ul className='list'>
-        <li className='list-item'><a href="/" className='link-item'>HOME</a></li>
-        <li className='list-item'><a href="/about-us" className='link-item'>ABOUT US</a></li>
-        <li className='list-item'><a href="/apply" className='link-item'>APPLY</a></li>
-        <li className='list-item'><a href="/secretariat" className='link-item'>SECRETARIAT</a></li>
+        <li className='list-item'><Link to="/" className='link-item'>HOME</Link></li>
+        <li className='list-item'><Link to="/about-us" className='link-item'>ABOUT US</Link></li>
+        <li className='list-item'><Link to="/apply" className='link-item'>APPLY</Link></li>
+        <li className='list-item'><Link to="/secretariat" className='link-item'>SECRETARIAT</Link></li>
         <li className='list-item' id ='special'>
           <DropdownButton id="dropdown-basic-button" title="MORE">
             <div class ="extra-items">

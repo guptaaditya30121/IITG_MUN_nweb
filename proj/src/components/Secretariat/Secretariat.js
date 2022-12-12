@@ -38,13 +38,6 @@ export default function Secretariat() {
         }
 
     }, [])
-    const handleMouseOver = () => {
-        setIsHovering(true);
-      };
-    
-      const handleMouseOut = () => {
-        setIsHovering(false);
-      };
     return (
         <> 
             <div className='page'>
