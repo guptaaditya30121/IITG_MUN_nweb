@@ -1,4 +1,4 @@
-
+import React from "react";
 import { useState,useEffect } from "react";
 import "./Footer.css"
 import InstagramIcon from '@mui/icons-material/Instagram';
