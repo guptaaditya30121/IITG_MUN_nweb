@@ -3,10 +3,12 @@ import React, {useState, useEffect} from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './Home.css';
-
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 
 const Home = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const [counter, setCounter] = useState(false)
     useEffect(() => {
         AOS.init({duration:2000});
 
@@ -39,23 +41,25 @@ const Home = () => {
                 <h4>O me! O life! Walt Whitman </h4>
                 <h4>Dead Poets Society</h4>
             </div>
-            <div className="stats" data-aos ="slide-left">
+            <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
+            <div className="stats" >
                 <div className="stat">
-                    <h2>560+</h2>
+                    <h2>{counter &&<CountUp className="counting"start={0} end={560} duration={1.8} delay={0.2} />}+</h2>
                     <h4>Delegates</h4>
                     <h5>From all over india</h5>
                 </div>
                 <div className="stat">
-                    <h2>35+</h2>
+                    <h2>{counter &&<CountUp className="counting"start={0} end={35} duration={1.8} delay={0.2} />}+</h2>
                     <h4>Executive Board</h4>
                     <h5>Overall</h5>
                 </div>
                 <div className="stat">
-                    <h2>21+</h2>
+                    <h2>{counter &&<CountUp className="counting"start={0} end={21} duration={1.8} delay={0.2} />}+</h2>
                     <h4>International Press</h4>
                     <h5>From country and beyond</h5>
                 </div>
             </div>
+            </ScrollTrigger>
             <div className="reviews">
                 <h2>Reviews</h2>
                 <div className="review">

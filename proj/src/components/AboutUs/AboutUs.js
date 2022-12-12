@@ -6,7 +6,7 @@ import "./AboutUs.css"
 const AboutUs = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     useEffect(() => {
-        AOS.init({duration:1500});
+        AOS.init({duration:2000});
         const changeWidth = () => {
           setScreenWidth(window.innerWidth);
         }
