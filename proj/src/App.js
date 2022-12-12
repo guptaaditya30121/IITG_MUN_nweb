@@ -7,7 +7,6 @@ import Home from './components/Home/Home'
 import Secretariat from './components/Secretariat/Secretariat'
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
-import Notfound from './components/Notfound/Notfound';
 
 function App() {
   return (
