@@ -1,4 +1,5 @@
 import './App.css';
+import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
@@ -6,7 +7,6 @@ import Home from './components/Home/Home'
 import Secretariat from './components/Secretariat/Secretariat'
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
-import Notfound from './components/Notfound/Notfound';
 
 function App() {
   return (
