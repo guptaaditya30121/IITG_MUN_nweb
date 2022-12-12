@@ -146,6 +146,11 @@
     font-weight: 700;
     font-size: 110px;
 }
+.counting
+{
+    background-color: transparent;
+}
+
 .stat h4
 {
     background-color: transparent;
