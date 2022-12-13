@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react'
 import './Secretariat.css';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import sanityClient from "../../client";   
+import sanityClient from "../../client";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import PersonImg from "../assets/person.png";
 export default function Secretariat() {
     const [isHovering, setIsHovering] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     const [people, setPeople] = useState();
+    const [alumni, setAlumni] = useState();
 
     useEffect(() => {
 		sanityClient
@@ -24,9 +28,25 @@ export default function Secretariat() {
 			)
 			.then((data) => setPeople(data))
 			.catch(console.error);
+
+            sanityClient
+			.fetch(
+				`*[_type == "alumni"]{
+                    name,
+                    post,
+                    img_url,
+                    status,
+                    id,
+                    alt,
+                    tenure,
+                }`
+			)
+			.then((data) => setAlumni(data))
+			.catch(console.error);
 	}, []);
 
     useEffect(() => {
+        AOS.init({duration:2000});
 
         const changeWidth = () => {
             setScreenWidth(window.innerWidth);
@@ -38,6 +58,8 @@ export default function Secretariat() {
         }
 
     }, [])
+
+    
     return (
         <> 
             <div className='page'>
@@ -53,11 +75,11 @@ export default function Secretariat() {
                 {(screenWidth < 750) && <div className="text2">
                     THE SECRETARIAT
                 </div>}
-                <div className="list_people">
+                <div className="list_people" data-aos="fade-up">
                     {people && 
                         people.map( (person) => (
                             <div className="profile" onMouseOver={()=>{person.status=0; setIsHovering(true); }} onMouseOut={()=>{person.status=1; setIsHovering(false);}}>
-                            <img src={person.img_url} alt = "Not found"className="prof_img"></img>
+                            <img src={person.img_url || PersonImg} alt = {person.alt} className="prof_img"></img>
                             {person.status&& (<div className="initial">
                                 <div className='info'>{person.name}</div>
                                 <div className='subinfo'>{person.post}</div>
@@ -73,8 +95,37 @@ export default function Secretariat() {
                     }
                     
                 </div>
+                {alumni && alumni.length>0 && (screenWidth > 750) && <div className="heading1" >
+                    <div className="block1"data-aos="fade-up"></div>
+                    <div className="text"data-aos="fade-up">
+                        OUR ALUMNI
+                    </div>
+                    <div className="block2"data-aos="fade-up"></div>
+                </div>}
+                {alumni && alumni.length>0 && (screenWidth < 750) && <div className="text2"data-aos="fade-up">
+                    OUR ALUMNI
+                </div>}
+                <div className="list_people" data-aos="fade-up">
+                    {alumni && 
+                        alumni.map( (person) => (
+                            <div className="profile" onMouseOver={()=>{person.status=0; setIsHovering(true); }} onMouseOut={()=>{person.status=1; setIsHovering(false);}}>
+                            <img
+                                src={person.img_url || PersonImg}
+                                alt = {person.alt}className="prof_img">
+                            </img>
+                            {person.status&& (<div className="initial">
+                                <div className='info'>{person.name}</div>
+                                <div className='subinfo'>{person.post} ({person.tenure})</div>
+                            </div>)}
+                            {person.status===0 && (<div className="final">
+                                <div className='info2'>{person.name}</div>
+                                <div className='subinfo2'>{person.post} ({person.tenure})</div>
+                            </div>)}
+                        </div>
+                        ))
+                    }
+                </div>
             </div>
-
         </>
     );
 }
