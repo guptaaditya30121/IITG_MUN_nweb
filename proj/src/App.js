@@ -11,6 +11,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
+import Contactus from "./components/Contactus/Contactus";
 
 function App() {
   useEffect(() => {
@@ -27,7 +28,7 @@ function App() {
         <Route exact path="/home" element={<Home/>}/>
         <Route exact path="/secretariat" element={<Secretariat/>}/>
         <Route exact path="/about-us" element={<AboutUs/>}/>
-        
+        <Route exact path="/contact-us" element={<Contactus/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
