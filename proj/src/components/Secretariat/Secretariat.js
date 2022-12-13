@@ -43,7 +43,7 @@ export default function Secretariat() {
             <div className='page'>
                 {(screenWidth > 750) && <div className="eclipse"></div>}
                 {(screenWidth > 750) && <div className="eclipse-2"></div>}
-                {(screenWidth > 750) && <div className="heading">
+                {(screenWidth > 750) && <div className="heading1">
                     <div className="block1"></div>
                     <div className="text">
                         THE SECRETARIAT
