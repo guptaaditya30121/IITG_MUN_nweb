@@ -47,7 +47,7 @@ export default function Contactus() {
                         
                             <img className="card" src={require("../Contactus/Frame\ 2.png")} alt="fvds"></img>
                            
-                        
+                            
                     </li>
                 </ul>
             </div>
