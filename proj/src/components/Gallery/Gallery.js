@@ -5,6 +5,7 @@ import "./Gallery.css";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import $ from 'jquery';
+import Logo from "../assets/logo-gallery.png";
 
 const photos = [
     {
@@ -233,8 +234,8 @@ const Gallery = () => {
                     <ChevronLeftIcon id="scroll-icon" className='left-angle'/>
                     <div className="cardd-container">
                         <img className='cardd' src = "https://source.unsplash.com/iecJiKe_RNg/600x799"></img>
-                        <img className='cardd' src = "https://source.unsplash.com/iecJiKe_RNg/600x799"></img>
-                        <img className='cardd' src = "https://source.unsplash.com/iecJiKe_RNg/600x799"></img>
+                        <img className='cardd' src = "https://source.unsplash.com/x8xJpClTvR0/800x599"></img>
+                        <img className='cardd' src = {Logo}></img>
                         <img className='cardd' src = "https://source.unsplash.com/iecJiKe_RNg/600x799"></img>
                         <img className='cardd' src = "https://source.unsplash.com/iecJiKe_RNg/600x799"></img>
                         <img className='cardd' src = "https://source.unsplash.com/iecJiKe_RNg/600x799"></img>
