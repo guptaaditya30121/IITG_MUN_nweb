@@ -1,7 +1,7 @@
 .footer
 {
     width: 100%;
-    background-color: var(--home-background-color);
+    background-color: var(--home1-background-color);
 
     display: flex;
     flex-direction: column;
@@ -30,13 +30,13 @@
 
 #insta
 {
-    color: var(--home-background-color);
+    color: var(--home1-background-color);
     background-color: var(--footer);
 }
 
 #facebook
 {
-    color: var(--home-background-color);
+    color: var(--home1-background-color);
     background-color: var(--footer);
 }
 

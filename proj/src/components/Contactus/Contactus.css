@@ -1,6 +1,8 @@
-body{
-    background-color: var(--home-background-color);
-   
+.light-theme{
+    background-color: #A5CCE2;
+}
+.dark-theme{
+    background-color: #54739B;
 }
 .cont{
     height: 70vw;
@@ -135,11 +137,10 @@ filter: blur(200px);
     object-fit: none;
     transform-origin: 0% 0%;
     transition: height,width, 2s,1s , filter 0.1s ease-in-out;
-    filter: brightness(100%);
+    margin-left: 8px;
 }
 .card:hover{
-    filter: brightness(120%);
     width: 62vw;
     height: 34vw;
     
-    }
+}

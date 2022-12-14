@@ -1,7 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import '../Contactus/Contactus.css'
-export default function Contactus() {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+import React, { useState, useEffect} from 'react'
+import { GoogleMap, LoadScript, MarkerF, InfoWindowF} from '@react-google-maps/api';
+import './Contactus.css';
+
+const containerStyle = {
+    height: '100%',
+    width:'100%'
+};
+
+const center = {
+    lat: 26.191131,
+    lng:  91.69250
+};
+const position = {
+    lat: 26.191131,
+    lng:  91.69219
+};
+function Contactus() {
+  const [selectedCenter, setSelectedCenter] = useState({});
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     useEffect(() => {
 
         const changeWidth = () => {
@@ -15,7 +31,7 @@ export default function Contactus() {
 
     }, [])
     return (
-        <div className='cont'>
+      <div className='cont'>
             {(screenWidth > 750) && <div className="eclipse"></div>}
             {(screenWidth > 750) && <div className="eclipse-2"></div>}
             {(screenWidth > 750) && <div className="heading">
@@ -44,13 +60,45 @@ export default function Contactus() {
                     </li>
                     <li className='li3'>
                         OUR LOCATION:
-                        
-                            <img className="card" src={require("../Contactus/Frame\ 2.png")} alt="fvds"></img>
+                        <div className='card' id = 'map' >
+                          <GoogleMap
+                              id='map'
+                            mapContainerStyle={containerStyle}
+                            center={center}
+                            zoom={16}
+                          >
+                            <MarkerF
+                            position={position}
+                            onClick={() => {
+                              setSelectedCenter(center.lat);
+                              console.log(center.lat)
+                          }}
+                            />
+
+                          {/* {selectedCenter && (
+                            <InfoWindowF
+                                onCloseClick={() => {
+                                  setSelectedCenter(null);
+                                }}
+                                position={{
+                                  lat: selectedCenter.latitude,
+                                  lng: selectedCenter.longitude
+                              }}
+                            >
+                            </InfoWindowF>
+                          )} */}
+                          </GoogleMap>
+                              
+                          </div>
                            
                             
                     </li>
                 </ul>
             </div>
+        
+            
         </div>
-    );
-}
+    )
+  }
+  
+  export default React.memo(Contactus)

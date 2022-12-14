@@ -87,7 +87,7 @@
     
 }
 .dropdown-menu{
-    background-color: var(--home-background-color);
+    background-color: var(--home1-background-color);
     border: none;
 }
 .dropdown-item:hover{

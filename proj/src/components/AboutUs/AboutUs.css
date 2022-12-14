@@ -1,7 +1,9 @@
-*{
-    background-color: var(--home-background-color);
+.light-theme{
+    background-color: #A5CCE2;
 }
-
+.dark-theme{
+    background-color: #54739B;
+}
 .eclipse
 {
     position: absolute;
