@@ -67,6 +67,10 @@ export default function Navbar() {
       </ul>
       )}
       {screenWidth<=900 && (
+        <ul className="nav-mob">
+          <li className='list-item' onClick={()=> toggleTheme()}>
+            <img src = {button} alt ="Not_found" className='theme-button' ></img>
+          </li>
           <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
             <div class ="extra-items">
               <Dropdown.Item href="/">HOME</Dropdown.Item>
@@ -78,7 +82,7 @@ export default function Navbar() {
               <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
             </div>
           </DropdownButton>
-        
+        </ul>
         
       )}
     </div>

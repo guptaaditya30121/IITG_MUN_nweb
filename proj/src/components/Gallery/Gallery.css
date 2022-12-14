@@ -1,0 +1,83 @@
+.light-theme{
+    background-color: #A5CCE2;
+}
+.dark-theme{
+    background-color: #54739B;
+}
+.eclipse
+{
+    position: absolute;
+width: 100px;
+height: 100px;
+left: -466px;
+top: -400px;
+z-index: -1;
+background: var(--eclipse);
+filter: blur(200px);
+}
+.eclipse-2
+{
+    position: absolute;
+    width: 613px;
+    height: 613px;
+    left: 1116px;
+    top: 800px;
+    background: var(--eclipse);
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.parent{
+    background-color: var(--eclipse);
+    margin: 5vh;
+    overflow-x: auto;
+    margin-bottom: 9vh;
+}
+.cardd-container{
+    overflow-x: auto;
+    white-space: nowrap;    
+    display: inline-block;
+    background-color: var(--eclipse);
+    height: 35vh;
+    width: 100vw;
+    margin-bottom: 2vh;
+  }
+  .cardd{
+    display: inline-block;
+    background-color: black;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 35vh;
+  }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.edition
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 49px;
+    color: var(--edition-gallery);
+    margin-left: 57px;
+}
+
+.arrange{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#scroll-icon{
+    color: var(--angle-gallery);
+    font-size: 50px;
+    text-decoration: none;
+}
