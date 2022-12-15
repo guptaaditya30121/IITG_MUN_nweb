@@ -9,6 +9,7 @@ import Secretariat from './components/Secretariat/Secretariat'
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
 import Gallery from "./components/Gallery/Gallery";
+import Apply from "./components/Apply/Apply";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/about-us" element={<AboutUs/>}/>
         <Route exact path="/contact-us" element={<Contactus/>}/>
         <Route exact path="/gallery" element={<Gallery/>}/>
+        <Route exact path="/apply" element={<Apply/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>
