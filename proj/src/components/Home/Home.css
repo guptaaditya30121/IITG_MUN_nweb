@@ -245,6 +245,22 @@
     margin-left: 5%;
 }
 
+.rev img
+{
+    padding: 30px;
+    min-width: 200px;
+}
+
+#UNGA
+{
+    margin-top: 50px;
+}
+
+#Eco
+{
+    margin-top: 30px;
+}
+
 .eclipse
 {
     position: absolute;

@@ -60,6 +60,23 @@ const Home = () => {
                 </div>
             </div>
             </ScrollTrigger>
+            <div className="reviews" data-aos="fade-in">
+                <h2>Councils</h2>
+                <div className="review">
+                    <div className="rev">
+                        <img src={require('../assets/LokSabha.png')} alt='not_found'></img>
+                        <h2>Lok Sabha</h2>
+                    </div>
+                    <div className="rev" >
+                        <img src={require('../assets/UNGA.png')} alt='not_found'></img>
+                        <h2 id='UNGA'>UNGA</h2>
+                    </div>
+                    <div className="rev">
+                        <img src={require('../assets/Eco.png')} alt='not_found'></img>
+                        <h2 id='Eco'>ECOSOC</h2>
+                    </div>
+                </div>
+            </div>
             <div className="reviews">
                 <h2>Reviews</h2>
                 <div className="review">

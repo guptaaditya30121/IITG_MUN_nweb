@@ -1,0 +1,144 @@
+.light-theme{
+    background-color: #A5CCE2;
+}
+.dark-theme{
+    background-color: #54739B;
+}
+.eclipse
+{
+    position: absolute;
+width: 1100px;
+height: 1100px;
+left: -466px;
+top: -400px;
+
+background: var(--eclipse);
+filter: blur(200px);
+}
+
+
+.banner
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+.leftBlock
+{
+    z-index: 1;
+    height: 3.8194vw;
+    margin-top: 4vw;
+    width: 3%;
+    background-color: var(--about-1);
+
+}
+
+.text-about
+{
+    margin-top: 2.25vw;
+    margin-bottom: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background: none;
+    padding: 0px;
+    z-index: 1;
+    color: var(--about-1);
+    font-size: 4.8vw;
+    font-weight: 700;
+    word-spacing: 0.3em;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: fit-content;
+}
+
+.rightBlock
+{
+    margin-left: 0;
+    z-index: 1;
+    height: 3.8194vw;
+    margin-top: 4vw;
+    width: 64%;
+    background-image: linear-gradient(to right, var(--about-1) , var(--about-2));
+}
+
+.rev
+{
+    background-color: var(--hero-2);
+    align-self: center;
+    padding: 30px;
+}
+
+.rev h2
+{
+    background-color: transparent;
+    color: var(--primary-text);
+}
+
+.rev img
+{
+    padding: 30px;
+    min-width: 200px;
+}
+
+.main-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 96%;
+    padding: 25px;
+    margin-left: 2%;
+    margin-top: 3%;
+    background-color: var(--hero-2);
+    align-self: center; 
+    text-align: center;
+    gap: 150px;
+}
+
+.sub-body
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-right-block
+{
+   height: inherit;
+    width: 5px;
+    /* padding: 10px; */
+    background-color: #EE6C4D;
+}
+
+.right-side
+{
+    display: flex;
+}
+
+.content{
+    max-width: 800px;
+    padding: 50px;
+    align-self: center;
+}
+
+.content p
+{
+    font-weight: 300;
+font-size: 20px;
+line-height: 28px;
+color:var(--about-1);
+}
+
+.content h3
+{
+    font-weight: 300;
+font-size: 36px;
+line-height: 32px;
+color: #EE6C4D;
+margin-top: 70px;
+text-align: left;
+margin-left: 3%;
+margin-bottom: 20px;
+}
