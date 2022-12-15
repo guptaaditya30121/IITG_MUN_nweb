@@ -87,7 +87,7 @@ export default function Secretariat() {
                             {person.status===0 && (<div className="final">
                                 <div className='info2'>{person.name}</div>
                                 <div className='subinfo2'>{person.post}</div>
-                                <a href={person.link_insta} target="_blank"><InstagramIcon id="insta1" color='disabled'/></a>
+                                <a href={person.link_insta} target="_blank"><InstagramIcon id="insta1"/></a>
                                 <a href={person.link_linkedin} target="_blank"><LinkedInIcon id="linkedin"/></a>
                             </div>)}
                         </div>
