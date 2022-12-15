@@ -142,3 +142,57 @@ text-align: left;
 margin-left: 3%;
 margin-bottom: 20px;
 }
+
+.apply-blocks
+{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 96%;
+    padding: 25px;
+    margin-left: 2%;
+    margin-top: 3%;
+    background-color: transparent;
+    align-self: center; 
+    text-align: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.apply-block
+{
+    width: 370px;
+    height: 500px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+#delegate
+{
+    background-image: url("../assets/delegate.png");
+}
+
+#executive
+{
+    background-image: url("../assets/Executive\ board.png");
+}
+
+#ip
+{
+    background-image: url("../assets/International\ press.png");
+}
+
+.apply-block button
+{
+    position: relative;
+    width: 134.47px;
+    height: 40.14px;
+    left: 0;
+    top: 425.77px;
+    background-color: #EE6C4D;
+    color: #F8EEE3;
+    border-radius: 1px;
+}

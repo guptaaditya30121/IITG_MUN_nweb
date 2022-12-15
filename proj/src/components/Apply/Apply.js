@@ -69,7 +69,17 @@ const Apply = () => {
                     </div>
                 </div>
             </div>
-            
+            <div className="apply-blocks">
+                <div className="apply-block" id="delegate">
+                    <button>Apply</button>
+                </div>
+                <div className="apply-block" id="executive">
+                    <button>Apply</button>
+                </div>
+                <div className="apply-block" id="ip">
+                    <button>Apply</button>
+                </div>
+            </div>
         </div>
       );
 }
