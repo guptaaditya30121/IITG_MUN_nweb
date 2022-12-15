@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Gallery.css";
@@ -12,6 +12,7 @@ const Gallery = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     const [scrollX, setscrollX] = useState(0);
     const [gallery, setGallery] = useState();
+    const itemsRef = useRef([]);
 
     useEffect(() => {
       sanityClient
@@ -36,8 +37,23 @@ const Gallery = () => {
         }
     
       },[])
-      const slide = (shift) => {
-      };
+
+
+    const sideScroll = (
+      element,
+      speed,
+      distance,
+      step
+    ) => {
+      let scrollAmount = 0;
+      const slideTimer = setInterval(() => {
+        element.scrollLeft += step;
+        scrollAmount += Math.abs(step);
+        if (scrollAmount >= distance) {
+          clearInterval(slideTimer);
+        }
+      }, speed);
+    };
 
     return ( 
         <div>
@@ -54,12 +70,16 @@ const Gallery = () => {
                 GALLERY
             </div>}
             {gallery &&
-              gallery.map( (edition) => (
+              gallery.map( (edition,i) => (
                 <div className='parent'data-aos="fade-in">
                     <h2 className='edition'>{edition.edition_num}</h2>
                     <div className="arrange">
-                        <ChevronLeftIcon id="scroll-icon" className='left-angle'/>
-                        <div className="cardd-container" >
+                        <ChevronLeftIcon
+                          onClick={() => {
+                            sideScroll(itemsRef.current[i], 25, 100, -10);
+                          }}
+                         id="scroll-icon" className='left-angle'/>
+                        <div className="cardd-container" ref={el => itemsRef.current[i] = el}>
                             {edition.img_urls.map( (img_url) => (
                               <img className='cardd' id="tp" 
                                 src = {img_url || Logo}
@@ -67,7 +87,11 @@ const Gallery = () => {
                               ></img>
                             ))}                      
                         </div>
-                        <ChevronRightIcon id="scroll-icon" className='right-angle'/>
+                        <ChevronRightIcon
+                          onClick={() => {
+                            sideScroll(itemsRef.current[i], 25, 100, 10);
+                          }}
+                         id="scroll-icon" className='right-angle'/>
                     </div>
                 </div>
               ))
