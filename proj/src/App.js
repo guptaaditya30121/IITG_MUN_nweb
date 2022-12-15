@@ -8,6 +8,7 @@ import Home from './components/Home/Home'
 import Secretariat from './components/Secretariat/Secretariat'
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
+import Gallery from "./components/Gallery/Gallery";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/secretariat" element={<Secretariat/>}/>
         <Route exact path="/about-us" element={<AboutUs/>}/>
         <Route exact path="/contact-us" element={<Contactus/>}/>
+        <Route exact path="/gallery" element={<Gallery/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -12,6 +12,8 @@
     --footer:#F8EEE3;
     --about-1:#54739B;
     --about-2:#082B4B;
+    --edition-gallery:#54739B;
+    --angle-gallery:#EE6C4D
 }
 
 .dark-theme
@@ -28,6 +30,8 @@
     --footer:#F2B995;
     --about-1:#F8EEE3;
     --about-2:#EE6C4D;
+    --edition-gallery:#EE6C4D;
+    --angle-gallery:#F8EEE3
 }
 body{
     overflow-x: hidden;

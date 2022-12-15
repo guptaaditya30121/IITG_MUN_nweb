@@ -15,9 +15,15 @@
     background-color:var(--nav-background-color);
     margin: 0px;
     z-index: 10;
+    display: flex;
+    align-items: center ;
+}
+.nav-mob{
+    display: flex;
+    align-items: center;
 }
 .list{
-   margin: 0PX;
+   margin: 0px;
    padding: 0px;
    display: flex;
    align-items: center;
@@ -37,6 +43,7 @@
     text-decoration: none;
     background-color: var(--nav-background-color);
     color: var(--nav-primary-color);
+    margin-bottom: 10px;
 }
 .link-item:hover{
     color: var(--nav-primary-color);
