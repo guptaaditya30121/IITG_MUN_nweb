@@ -55,9 +55,9 @@ export default function Navbar() {
         <li className='list-item' id ='special'>
           <DropdownButton id="dropdown-basic-button" title="MORE">
             <div class ="extra-items">
-              <Dropdown.Item href="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
-              <Dropdown.Item href="/gallery">GALLERY</Dropdown.Item>
-              <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/gallery">GALLERY</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/contact-us">CONTACT US</Dropdown.Item>
             </div>
           </DropdownButton>
         </li> 
@@ -73,13 +73,13 @@ export default function Navbar() {
           </li>
           <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
             <div class ="extra-items">
-              <Dropdown.Item href="/">HOME</Dropdown.Item>
-              <Dropdown.Item href="/about-us">ABOUT US</Dropdown.Item>
-              <Dropdown.Item href="/apply">APPLY</Dropdown.Item>
-              <Dropdown.Item href="/secretariat">SECRETARIAT</Dropdown.Item>
-              <Dropdown.Item href="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
-              <Dropdown.Item href="/gallery">GALLERY</Dropdown.Item>
-              <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/"href="/">HOME</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/about-us">ABOUT US</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/apply">APPLY</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/secretariat">SECRETARIAT</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/gallery">GALLERY</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/contact-us">CONTACT US</Dropdown.Item>
             </div>
           </DropdownButton>
         </ul>
