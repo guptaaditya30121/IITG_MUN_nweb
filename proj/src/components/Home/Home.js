@@ -10,8 +10,24 @@ import {Link} from "react-router-dom";
 const Home = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     const [counter, setCounter] = useState(false)
+    const[lok,setLok]=useState();
+    const[eco,setEco]=useState();
+    const[ung,setUng]=useState();
     useEffect(() => {
         AOS.init({duration:2000});
+
+        if(document.body.className==="light-theme")
+        {
+            setLok(require("../assets/LokSabha_org.png"));
+            setUng(require('../assets/UNGA_org.png'));
+            setEco(require('../assets/Eco_org.png'));
+        }
+        else
+        {
+            setLok(require('../assets/LokSabha.png'));
+            setUng(require('../assets/UNGA.png'));
+            setEco(require('../assets/Eco.png'));
+        }
 
         const changeWidth = () => {
           setScreenWidth(window.innerWidth);
@@ -22,6 +38,24 @@ const Home = () => {
         }
     
       },[])
+
+      const mutationObserve = new MutationObserver(entries =>{
+        if(document.body.className==="light-theme")
+        {
+            setLok(require("../assets/LokSabha_org.png"));
+            setUng(require('../assets/UNGA_org.png'));
+            setEco(require('../assets/Eco_org.png'));
+        }
+        else
+        {
+            setLok(require('../assets/LokSabha.png'));
+            setUng(require('../assets/UNGA.png'));
+            setEco(require('../assets/Eco.png'));
+        }
+    })
+    mutationObserve.observe(document.body,{attributes:true});
+
+
     return ( 
         <div className="Home">
             {(screenWidth > 750) &&<div className="eclipse"></div>}
@@ -66,15 +100,15 @@ const Home = () => {
                     <h2>Councils</h2>
                     <div className="review">
                         <div className="rev">
-                            <img src={require('../assets/LokSabha.png')} alt='not_found'></img>
+                            <img src={lok} alt='not_found'></img>
                             <h2>Lok Sabha</h2>
                         </div>
                         <div className="rev" >
-                            <img src={require('../assets/UNGA.png')} alt='not_found'></img>
+                            <img src={ung} alt='not_found'></img>
                             <h2 id='UNGA'>UNGA</h2>
                         </div>
                         <div className="rev">
-                            <img src={require('../assets/Eco.png')} alt='not_found'></img>
+                            <img src={eco} alt='not_found'></img>
                             <h2 id='Eco'>ECOSOC</h2>
                         </div>
                     </div>
