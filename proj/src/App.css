@@ -7,13 +7,15 @@
     --secondary-text:#EB6E52;
     --home1-background-color:#A5CCE2; 
     --hero-1:#fde3c800;
-    --hero-2:#fde3c8;
+    --hero-2:#F8EEE3;
     --eclipse:#F8EEE3;
     --footer:#F8EEE3;
     --about-1:#54739B;
     --about-2:#082B4B;
     --edition-gallery:#54739B;
     --angle-gallery:#EE6C4D
+    --preved-nav-background-color-1 :#F8EEE3;
+    --preved-head :#54739B;
 }
 
 .dark-theme
@@ -32,6 +34,8 @@
     --about-2:#EE6C4D;
     --edition-gallery:#EE6C4D;
     --angle-gallery:#F8EEE3
+    --preved-nav-background-color-1 :#082B4B;
+    --preved-head :#F8EEE3;
 }
 body{
     overflow-x: hidden;

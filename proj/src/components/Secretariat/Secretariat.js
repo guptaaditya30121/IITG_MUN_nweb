@@ -59,7 +59,15 @@ export default function Secretariat() {
 
     }, [])
 
-    
+    function compare( a, b ) {
+        if ( a.id < b.id){
+          return -1;
+        }
+        if ( a.id > b.id){
+          return 1;
+        }
+        return 0;
+    }
     return (
         <> 
             <div className='page'>
@@ -77,6 +85,7 @@ export default function Secretariat() {
                 </div>}
                 <div className="list_people" data-aos="fade-up">
                     {people && 
+                        people.sort(compare) &&
                         people.map( (person) => (
                             <div className="profile" onMouseOver={()=>{person.status=0; setIsHovering(true); }} onMouseOut={()=>{person.status=1; setIsHovering(false);}}>
                             <img src={person.img_url || PersonImg} alt = {person.alt} className="prof_img"></img>
@@ -106,7 +115,8 @@ export default function Secretariat() {
                     OUR ALUMNI
                 </div>}
                 <div className="list_people" data-aos="fade-up">
-                    {alumni && 
+                    {alumni &&
+                        alumni.sort(compare) && 
                         alumni.map( (person) => (
                             <div className="profile" onMouseOver={()=>{person.status=0; setIsHovering(true); }} onMouseOut={()=>{person.status=1; setIsHovering(false);}}>
                             <img
