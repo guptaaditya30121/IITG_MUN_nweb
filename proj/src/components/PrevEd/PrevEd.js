@@ -44,8 +44,8 @@ function PrevEd() {
     </div>);
     return (
         <div>
-            {(screenWidth > 750) && <div className="eclipse1"></div>}
-            {(screenWidth > 750) && <div className="eclipse-21"></div>}
+            <div className="eclipse1"></div>
+            <div className="eclipse-21"></div>
             {(screenWidth > 750) && <div className="heading1" >
                 <div className="block11"></div>
                 <div className="text1">

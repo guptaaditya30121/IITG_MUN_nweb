@@ -1,12 +1,13 @@
 .preved {
     position: relative;
    
-    background-color: var(--nav-background-color-1);
+    background-color: var(--eclipse);
     min-height: 15.486vw;
     width: 92vw;
     margin: 4vw;
     padding: 0px;
     margin-bottom: 6vw;
+    overflow: scroll;
 }
 .head{
     letter-spacing: 0.06em;
@@ -14,7 +15,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 3vw;
-    color: #F8EEE3;
+    color: var(--preved-head);
     background-color: transparent;
     padding: 10px;
 }
@@ -24,6 +25,7 @@
     justify-content:space-between;
     align-content: center;
     overflow:scroll;
+    
 }
 @keyframes example {
     0%{ opacity: 0;
@@ -36,20 +38,30 @@
         }
 }
 .council{
-    margin: 1.4vw;
+    margin: 20px;
     
     height: 4.4vw;
-    width: 258px;
-    background-color: var(--about-2);
-    color: var(--secondary-text);
+    min-width: 18vw;
+    background-color: #EB6E52;
+    color: #F8EEE3;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.667vw;
+    font-size: 1.7vw;
     font-weight: 500;
     letter-spacing: 0.06em;
     font-family: Arial, Helvetica, sans-serif;
-    animation: example2 0.3s linear 0s 1 ;
+    animation: example2 0.6s linear 0s 1 ;
+}
+@media screen and (max-width : 800px) {
+    .council{
+        min-width: 180px;
+        font-size: 18px;
+        height: 45px;
+    }
+    .head{
+        font-size: 5vw;
+    }
 }
 @keyframes example {
     0%{ opacity: 0;
@@ -67,7 +79,7 @@
     margin: 2vw;
     width: 260px;
     height: 260px;
-    animation: example 1s ease-in 0s 1;
+    
 }
 .heading1{
     margin: 0.5vw;
@@ -101,6 +113,8 @@
     word-spacing: 0.3em;
 }
 .text21{
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     font-size: 8vw;
@@ -112,24 +126,24 @@
 .eclipse1
 {
     position: absolute;
-width: 1100px;
-height: 1100px;
-left: -466px;
-top: -400px;
+width: 76vw;
+height: 76vw;
+left: -32vw;
+top: -27vw;
    
 background: var(--eclipse);
-filter: blur(200px);
+filter: blur(14vw);
 z-index: 0;
 }
 
 .eclipse-21
 {
     position: absolute;
-    width: 613px;
-    height: 613px;
-    left: 1116px;
-    top: 800px;
+    width: 42.5vw;
+    height: 42.5vw;
+    left: 77.5vw;
+    top: 56vw;
     z-index: 0;
     background: var(--eclipse);
-    filter: blur(200px);
+    filter: blur(14vw);
 }

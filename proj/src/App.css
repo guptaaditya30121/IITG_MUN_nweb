@@ -14,6 +14,8 @@
     --about-2:#082B4B;
     --edition-gallery:#54739B;
     --angle-gallery:#EE6C4D
+    --preved-nav-background-color-1 :#F8EEE3;
+    --preved-head :#54739B;
 }
 
 .dark-theme
@@ -32,6 +34,8 @@
     --about-2:#EE6C4D;
     --edition-gallery:#EE6C4D;
     --angle-gallery:#F8EEE3
+    --preved-nav-background-color-1 :#082B4B;
+    --preved-head :#F8EEE3;
 }
 body{
     overflow-x: hidden;
