@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import {Outlet, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import './Navbar.css';
 //import '../assets/logo.png';
 export default function Navbar() {

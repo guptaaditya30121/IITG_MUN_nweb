@@ -196,3 +196,15 @@ margin-bottom: 20px;
     color: #F8EEE3;
     border-radius: 1px;
 }
+
+.apply-now{
+    width: 180px;
+    height: 54px;
+    background-color: #EE6C4D;
+    color: #F8EEE3;
+    font-size: 1.5em;
+}
+.center{
+    text-align: center;
+    height: 80px;
+}

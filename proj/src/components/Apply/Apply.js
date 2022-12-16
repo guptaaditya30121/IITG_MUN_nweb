@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './Apply.css';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Apply = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -24,6 +25,9 @@ const Apply = () => {
                 <div className="leftBlock"></div>
                 <div className='text-about'>APPLY HERE</div>
                 <div className="rightBlock"></div>
+            </div>
+            <div className='center'>
+                <a href="#apply-blocks"><button className='apply-now'>Apply Now <ExpandMoreIcon/></button></a>
             </div>
             <div className="main-body">
                 <div className="sub-body">
@@ -69,7 +73,7 @@ const Apply = () => {
                     </div>
                 </div>
             </div>
-            <div className="apply-blocks">
+            <div className="apply-blocks" id="apply-blocks">
                 <div className="apply-block" id="delegate">
                     <button>Apply</button>
                 </div>
