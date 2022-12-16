@@ -37,7 +37,7 @@ function PrevEd() {
     <div className='container' style={{backgroundImage: `url(${t})`}}>
         <div className='subhead'>{edition.council[key]}</div><br/>
 
-        {edition.counciltext[key]}
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, quo inventore non sint laudantium laborum vitae? Veniam excepturi culpa consequuntur repellendus architecto, accusantium quas debitis itaque ipsa, placeat quasi quos possimus velit voluptate assumenda.
                    </div>
                     )
             }
