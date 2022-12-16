@@ -33,7 +33,12 @@ function PrevEd() {
         <div className="councils">
             {
                 edition.councilimg.map((t,key) =>  
-                    <img  className = "councilimg" src={t} alt="image" />
+    
+    <div className='container' style={{backgroundImage: `url(${t})`}}>
+        <div className='subhead'>{edition.council[key]}</div><br/>
+
+        {edition.counciltext[key]}
+                   </div>
                     )
             }
 

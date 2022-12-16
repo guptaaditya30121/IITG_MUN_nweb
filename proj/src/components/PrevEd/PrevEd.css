@@ -63,24 +63,38 @@
         font-size: 5vw;
     }
 }
-@keyframes example {
-    0%{ opacity: 0;
-        height: 6vw;
-        width: 6vw;
-       
-        }
-     
-    100%{opacity: 1;
-         width: 260px;
-        height: 260px;
-        }
+
+.container{
+    padding: 0px;
+    margin: 2vw;
+    min-width: 260px;
+    min-height: 260px;
+    animation: eg 1s linear 0s 1;
+    overflow: hidden;
+    text-align: center;
+    color: #F8EEE3;
 }
-.councilimg{
+
+@keyframes eg {
+    from{
+        opacity: 0;
+        min-height: 0px;
+        max-height: 0px;
+        min-width: 260px;
+    }
+    to{
+        opacity: 1;
+        min-height: 260px;
+        max-height: 0px;
+        min-width: 260px;
+    }
+}
+/* .councilimg{
     margin: 2vw;
     width: 260px;
     height: 260px;
     
-}
+} */
 .heading1{
     margin: 0.5vw;
     display: grid;
@@ -146,4 +160,8 @@ z-index: 0;
     z-index: 0;
     background: var(--eclipse);
     filter: blur(14vw);
+}
+/* width */
+.subhead{
+    font-size: 2vw;
 }
