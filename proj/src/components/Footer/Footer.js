@@ -8,15 +8,17 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
     const [logo,setLogo] = useState();
-
+    const [wp,setWp]=useState();
     useEffect(() => {
         if(document.body.className==="light-theme")
         {
             setLogo(require("../assets/light_footer.png"));
+            setWp(require("../assets/logo_wordpress_light.png"));
         }
         else
         {
             setLogo(require("../assets/dark_footer.png"));
+            setWp(require("../assets/logo_wordpress_dark.png"));
         }
     
       },[])
@@ -25,10 +27,12 @@ const Footer = () => {
         if(document.body.className==="light-theme")
         {
             setLogo(require("../assets/light_footer.png"));
+            setWp(require("../assets/logo_wordpress_light.png"));
         }
         else
         {
             setLogo(require("../assets/dark_footer.png"));
+            setWp(require("../assets/logo_wordpress_dark.png"));
         }
     })
     mutationObserve.observe(document.body,{attributes:true});
@@ -39,6 +43,13 @@ const Footer = () => {
                 <TwitterIcon id = "twitter" />
                 <FacebookIcon id = "facebook"/>
                 <InstagramIcon id = "insta"/>
+                <img src={wp} alt='notfound'></img>
+            </div>
+            <div>
+                <p>Developed by Sahil, Ketan and Aditya</p>
+                <p>Designed by Adi</p>
+                <p>Conference Hall, IIT Guwahati, North Guwahati,</p>
+                <p>Guwahati, Assam 781039</p>
             </div>
         </div>
      );

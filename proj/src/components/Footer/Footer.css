@@ -2,18 +2,18 @@
 {
     width: 100%;
     background-color: var(--home1-background-color);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     width: 96%;
-    height: 400px;
+    height: auto;
     padding: 50px;
     margin-left: 2%;
     margin-top: 4%;
     align-self: center; 
     text-align: center;
+    gap:15px;
 }
 
 .footer img
@@ -43,4 +43,19 @@
 #twitter
 {
     color: var(--footer);
+}
+
+p
+{
+    font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+color: var(--footer);
+}
+
+.icons img
+{
+    align-self: center;
+    width: 24px;
+    height: 24px;
 }
