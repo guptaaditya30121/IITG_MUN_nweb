@@ -53,7 +53,7 @@
     font-family: Arial, Helvetica, sans-serif;
     animation: example2 0.6s linear 0s 1 ;
 }
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 900px) {
     .council{
         min-width: 180px;
         font-size: 18px;
