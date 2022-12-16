@@ -189,10 +189,11 @@
 {
     padding-top: 30px;
     background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     margin: 1.5%;
-    gap: 2rem;
+    gap: 3rem;
+    justify-content: center;
 }
 
 .reviews h2
@@ -218,7 +219,7 @@
 .rev
 {
     background-color: var(--hero-2);
-    
+    min-width: 300px;
 }
 
 .rev p

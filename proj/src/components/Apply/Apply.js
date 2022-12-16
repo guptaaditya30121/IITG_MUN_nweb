@@ -6,7 +6,24 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Apply = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+    const[lok,setLok]=useState();
+    const[eco,setEco]=useState();
+    const[ung,setUng]=useState();
     useEffect(() => {
+
+        if(document.body.className==="light-theme")
+        {
+            setLok(require("../assets/LokSabha_blue.png"));
+            setUng(require('../assets/UNGA_blue.png'));
+            setEco(require('../assets/Eco_blue.png'));
+        }
+        else
+        {
+            setLok(require('../assets/LokSabha.png'));
+            setUng(require('../assets/UNGA.png'));
+            setEco(require('../assets/Eco.png'));
+        }
+
         AOS.init({duration:2000});
         const changeWidth = () => {
           setScreenWidth(window.innerWidth);
@@ -15,8 +32,26 @@ const Apply = () => {
         return () => {
             window.removeEventListener('resize', changeWidth)
         }
+
+        
     
       },[])
+
+      const mutationObserve = new MutationObserver(entries =>{
+        if(document.body.className==="light-theme")
+        {
+            setLok(require("../assets/LokSabha_blue.png"));
+            setUng(require('../assets/UNGA_blue.png'));
+            setEco(require('../assets/Eco_blue.png'));
+        }
+        else
+        {
+            setLok(require('../assets/LokSabha.png'));
+            setUng(require('../assets/UNGA.png'));
+            setEco(require('../assets/Eco.png'));
+        }
+    })
+    mutationObserve.observe(document.body,{attributes:true});
 
     return (
         <div>
@@ -32,7 +67,7 @@ const Apply = () => {
             <div className="main-body">
                 <div className="sub-body">
                     <div className="rev">
-                        <img src={require('../assets/LokSabha.png')} alt='not_found'></img>
+                        <img src={lok} alt='not_found'></img>
                         <h2>Lok Sabha</h2>
                     </div>
                     <div className="right-side">
@@ -46,7 +81,7 @@ const Apply = () => {
                 </div>
                 <div className="sub-body">
                     <div className="rev">
-                        <img src={require('../assets/UNGA.png')} alt='not_found'></img>
+                        <img src={ung} alt='not_found'></img>
                         <h2 id='UNGA'>UNGA</h2>
                     </div>
                     <div className="right-side">
@@ -60,7 +95,7 @@ const Apply = () => {
                 </div>
                 <div className="sub-body">
                     <div className="rev">
-                        <img src={require('../assets/Eco.png')} alt='not_found'></img>
+                        <img src={eco} alt='not_found'></img>
                         <h2 id='Eco'>ECOSOC</h2>
                     </div>
                     <div className="right-side">
