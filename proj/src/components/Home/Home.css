@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 .light-theme{
     background-color: #A5CCE2;
@@ -193,7 +193,7 @@
     flex-wrap: wrap;
     margin: 1.5%;
     gap: 3rem;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .reviews h2
