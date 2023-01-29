@@ -59,3 +59,12 @@ color: var(--footer);
     width: 24px;
     height: 24px;
 }
+
+a{
+    color: var(--footer);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--footer);
+}
