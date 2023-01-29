@@ -40,10 +40,10 @@ const Footer = () => {
         <div className="footer">
             <img src = {logo} alt ="not_found"></img>
             <div className="icons">
-                <TwitterIcon id = "twitter" />
-                <FacebookIcon id = "facebook"/>
-                <InstagramIcon id = "insta"/>
-                <img src={wp} alt='notfound'></img>
+            <a href="https://twitter.com/iitg_mun" target="_blank"><TwitterIcon id = "twitter" /></a>
+            <a href="https://www.facebook.com/iitgmun" target="_blank"><FacebookIcon id = "facebook"/></a>
+            <a href="https://www.instagram.com/iitg_mun/" target="_blank"><InstagramIcon id = "insta"/></a>
+            <a href="https://iitgmun.wordpress.com/" target="_blank"><img src={wp} alt='notfound'></img></a>
             </div>
             <div>
                 <p>Developed by <a href="www.linkedin.com/in/sahil2609" target="_blank">Sahil</a>, <a href="https://www.linkedin.com/in/ketan-singh-71bb40230/" target="_blank">Ketan</a> and <a href="https://www.linkedin.com/in/aditya-gupta-07962222a" target="_blank">Aditya</a></p>
