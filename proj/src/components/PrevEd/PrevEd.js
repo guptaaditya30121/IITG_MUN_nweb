@@ -35,10 +35,10 @@ function PrevEd() {
 
     }, [])
     function compare( a, b ) {
-        if ( a.id < b.id){
+        if ( a.id > b.id){
           return -1;
         }
-        if ( a.id > b.id){
+        if ( a.id < b.id){
           return 1;
         }
         return 0;
@@ -81,10 +81,8 @@ function PrevEd() {
                     <div className="councils">
                         {   
                             edition.council.map((council,i) =>  
-                                <div className='container' style={{backgroundImage: `url(${edition.councilimg[i]})`, backgroundRepeat  : 'no-repeat',
-                                backgroundPosition: 'center',}}>
-                                    <div className='subhead'>{council}</div><br/>
-                                        {edition.counciltext[i]}
+                                <div className='container' style={{backgroundPosition: 'center', height:'15vh'}}>
+                                    <img src= {edition.councilimg[i]} style={{height:'100%'}}/>
                                 </div>
                             )
                         }

@@ -19,6 +19,7 @@ const Gallery = () => {
         .fetch(
           `*[_type == "gallery"]{
                       edition_num,
+                      id,
                       img_urls
                   }`
         )
@@ -37,6 +38,16 @@ const Gallery = () => {
         }
     
       },[])
+    
+    function compare( a, b ) {
+        if ( a.id > b.id){
+          return -1;
+        }
+        if ( a.id < b.id){
+          return 1;
+        }
+        return 0;
+    }
 
 
     const sideScroll = (
@@ -70,6 +81,7 @@ const Gallery = () => {
                 GALLERY
             </div>}
             {gallery &&
+            gallery.sort(compare) &&
               gallery.map( (edition,i) => (
                 <div className='parent'data-aos="fade-in">
                     <h2 className='edition'>{edition.edition_num}</h2>

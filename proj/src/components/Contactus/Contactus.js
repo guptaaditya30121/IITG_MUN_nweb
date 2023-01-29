@@ -49,9 +49,8 @@ function Contactus() {
                     <li className='li1'>
                         CALL US:
                         <ul className='op'>
-                            123456789<br/>
-                            123456789<br/>
-                            123456789
+                            9765567011<br/>
+                            8104189818
                         </ul>
                     </li>
                     <li className='li2'>

@@ -79,17 +79,17 @@ const Home = () => {
             <ScrollTrigger onEnter={()=>setCounter(true)} onExit={()=>setCounter(false)}>
             <div className="stats" >
                 <div className="stat">
-                    <h2>{counter &&<CountUp className="counting"start={0} end={560} duration={1.8} delay={0.2} />}+</h2>
+                    <h2>{counter &&<CountUp className="counting"start={0} end={800} duration={1.2} delay={0.2} />}+</h2>
                     <h4>Delegates</h4>
                     <h5>From all over india</h5>
                 </div>
                 <div className="stat">
-                    <h2>{counter &&<CountUp className="counting"start={0} end={35} duration={1.8} delay={0.2} />}+</h2>
+                    <h2>{counter &&<CountUp className="counting"start={0} end={45} duration={1.2} delay={0.2} />}+</h2>
                     <h4>Executive Board</h4>
                     <h5>Overall</h5>
                 </div>
                 <div className="stat">
-                    <h2>{counter &&<CountUp className="counting"start={0} end={21} duration={1.8} delay={0.2} />}+</h2>
+                    <h2>{counter &&<CountUp className="counting"start={0} end={35} duration={1.2} delay={0.2} />}+</h2>
                     <h4>International Press</h4>
                     <h5>From country and beyond</h5>
                 </div>
@@ -125,8 +125,8 @@ const Home = () => {
                             <span className="star">&#9733;</span>
                             <span className="star">&#9733;</span>
                         </div>
-                        <p>"It's a really amazing platform to learn not only about the affairs of the world but also about how to articulate your thoughts and put them into words." </p>
-                        <h5>-Vishwaprasanna Hariharan</h5>
+                        <p>"It's a fantastic forum for learning not just about current events, but also about how to explain your views and put them into words.." </p>
+                        <h5>-Mohammad Rabey</h5>
                     </div>
                     <div className="rev"data-aos="fade-up">
                         <div className="stars">
@@ -136,8 +136,8 @@ const Home = () => {
                             <span className="star">&#9733;</span>
                             <span className="star">&#9733;</span>
                         </div>
-                        <p>"Yes, the IITG MUN has amazing discussions, but the best part of this MUN has to be the people. We are united by the strongest bond of common interests. Continuous open dialogue with people we only know by country names during the conference and the supportive MUN community is, by far, its most beautiful part."  </p>
-                        <h5>-Ariktha Srivathsan</h5>
+                        <p>"Yes, the IITG MUN offers fantastic debates, but the best part has to be the people. We are bound together by the strongest connection of shared interests. During the conference, the most wonderful aspect is the continuous open discussion with individuals we only know by country names and the supporting MUN community.."  </p>
+                        <h5>-Vikash Rahul</h5>
                     </div>
                     <div className="rev" data-aos="fade-left">
                         <div className="stars">
