@@ -62,7 +62,7 @@ const Apply = () => {
                 <div className="rightBlock"></div>
             </div>
             <div className='center'>
-                <a href="#apply-blocks"><button className='apply-now'>Apply Now <ExpandMoreIcon/></button></a>
+                <a href="#apply-blocks" target="_blank"><button className='apply-now'>Apply Now <ExpandMoreIcon/></button></a>
             </div>
             <div className="main-body">
                 <div className="sub-body">
