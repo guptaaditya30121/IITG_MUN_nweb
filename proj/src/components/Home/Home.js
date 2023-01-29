@@ -152,6 +152,18 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="reviews" >
+                <div className="review" id = "sponsors">
+                    <div className="rev" data-aos="fade-up">
+                        <h4>Distribution Partner</h4>
+                        <img src={require('../assets/Safexpress Logo.png')} alt='not_found'></img>
+                    </div>
+                    <div className="rev" data-aos="fade-up">
+                        <h4>Gift Partner</h4>
+                        <img src={require('../assets/sundaram logo.png')} alt='not_found'></img>
+                    </div>
+                </div>
+            </div>
         </div>
      );
 }

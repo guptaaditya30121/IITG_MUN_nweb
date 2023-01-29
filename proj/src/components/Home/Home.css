@@ -286,6 +286,16 @@ filter: blur(200px);
     filter: blur(200px);
 }
 
+#sponsors h4
+{
+    color:var(--secondary-text) ;
+    font-weight: 500;
+}
+
+#sponsors
+{
+    justify-content: space-evenly;
+}
 
 @media(max-width:790px)
 {
