@@ -20,7 +20,7 @@ filter: blur(200px);
 .banner
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0px;
 }
 .leftBlock
@@ -32,7 +32,7 @@ filter: blur(200px);
     background-color: var(--about-1);
 }
 
-.text-about
+#text-about
 {
     margin-top: 2.25vw;
     margin-bottom: 2vw;
@@ -42,7 +42,7 @@ filter: blur(200px);
     padding: 0px;
     z-index: 1;
     color: var(--about-1);
-    font-size: 4.8vw;
+    font-size: 4.3vw;
     font-weight: 700;
     word-spacing: 0.3em;
     display: flex;

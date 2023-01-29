@@ -23,7 +23,7 @@ const AboutUs = () => {
             {(screenWidth > 750) &&<div className="eclipse"></div>}
             <div className="banner">
                 <div className="leftBlock"></div>
-                <div className='text-about'>WHAT WE DO</div>
+                <div id='text-about'>WHAT WE DO</div>
                 <div className="rightBlock"></div>
             </div>
             <div className="about">
