@@ -46,7 +46,7 @@ const Footer = () => {
             <a href="https://iitgmun.wordpress.com/" target="_blank"><img src={wp} alt='notfound'></img></a>
             </div>
             <div>
-                <p>Developed by <a href="www.linkedin.com/in/sahil2609" target="_blank">Sahil</a>, <a href="https://www.linkedin.com/in/ketan-singh-71bb40230/" target="_blank">Ketan</a> and <a href="https://www.linkedin.com/in/aditya-gupta-07962222a" target="_blank">Aditya</a></p>
+                <p>Developed by <a href="https://www.linkedin.com/in/sahil2609" target="_blank">Sahil</a>, <a href="https://www.linkedin.com/in/ketan-singh-71bb40230/" target="_blank">Ketan</a> and <a href="https://www.linkedin.com/in/aditya-gupta-07962222a" target="_blank">Aditya</a></p>
                 <p>Designed by <a href="https://www.behance.net/adithyansunilk" target="_blank">Adi</a></p>
                 <p>Conference Hall, IIT Guwahati, North Guwahati,</p>
                 <p>Guwahati, Assam 781039</p>
