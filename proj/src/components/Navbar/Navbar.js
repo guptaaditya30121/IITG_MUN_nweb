@@ -74,7 +74,7 @@ export default function Navbar() {
           </li>
           <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20} toggled={isOpen} toggle={setOpen}/> }>
             <div class ="extra-items">
-              <Dropdown.Item as={Link} to="/"href="/" onClick={() => setOpen(false)}>HOME</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/"onClick={() => setOpen(false)}>HOME</Dropdown.Item>
               <Dropdown.Item as={Link} to="/about-us"onClick={() => setOpen(false)}>ABOUT US</Dropdown.Item>
               <Dropdown.Item as={Link} to="/apply"onClick={() => setOpen(false)}>APPLY</Dropdown.Item>
               <Dropdown.Item as={Link} to="/secretariat"onClick={() => setOpen(false)}>SECRETARIAT</Dropdown.Item>
