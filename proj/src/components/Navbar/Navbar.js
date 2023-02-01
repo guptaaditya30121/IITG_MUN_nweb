@@ -46,7 +46,7 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>      
-      <a className='link-item' href= "/"><img src={logo} alt="not_found" className='logo'></img></a>
+      <Link to="/" className='link-item' href= "/"><img src={logo} alt="not_found" className='logo'></img></Link>
       {(screenWidth > 900) && (
       <ul className='list'>
         <li className='list-item'><Link to="/" className='link-item'>HOME</Link></li>
