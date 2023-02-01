@@ -10,6 +10,7 @@ export default function Navbar() {
   const [theme,setTheme] = useState('light-theme')
   const[logo,setLogo] = useState(require('../assets/Light-logo.png'))
   const[button,setButton] = useState(require("../assets/Moon_light.png"))
+  const [isOpen, setOpen] = useState(false)
 
 
   useEffect(() => {
@@ -71,15 +72,15 @@ export default function Navbar() {
           <li className='list-item' onClick={()=> toggleTheme()}>
             <img src = {button} alt ="Not_found" className='theme-button' ></img>
           </li>
-          <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20}/> }>
+          <DropdownButton id="dropdown-basic-button" title={ <Hamburger size={20} toggled={isOpen} toggle={setOpen}/> }>
             <div class ="extra-items">
-              <Dropdown.Item as={Link} to="/"href="/">HOME</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/about-us">ABOUT US</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/apply">APPLY</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/secretariat">SECRETARIAT</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/previous-editions">PREVIOUS EDITIONS</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/gallery">GALLERY</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/contact-us">CONTACT US</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/"href="/" onClick={() => setOpen(false)}>HOME</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/about-us"onClick={() => setOpen(false)}>ABOUT US</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/apply"onClick={() => setOpen(false)}>APPLY</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/secretariat"onClick={() => setOpen(false)}>SECRETARIAT</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/previous-editions"onClick={() => setOpen(false)}>PREVIOUS EDITIONS</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/gallery"onClick={() => setOpen(false)}>GALLERY</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/contact-us"onClick={() => setOpen(false)}>CONTACT US</Dropdown.Item>
             </div>
           </DropdownButton>
         </ul>

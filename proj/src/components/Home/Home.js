@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="quote" data-aos="fade-in" >
-                <h3  >"That the powerfull play goes on, and you may contribute a verse"</h3>
+                <h3  >"That the powerful play goes on, and you may contribute a verse"</h3>
                 <h3 id = "quote-1">"What verse shall be yours?"</h3>
                 <h4>O me! O life! Walt Whitman </h4>
                 <h4>Dead Poets Society</h4>
