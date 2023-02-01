@@ -138,6 +138,7 @@
     background-image: radial-gradient(var(--hero-2)45%,var(--home1-background-color)60%);
     align-self: center; 
     text-align: center;
+    z-index: -10;
     /* border-radius: 50%; */
 }
 
