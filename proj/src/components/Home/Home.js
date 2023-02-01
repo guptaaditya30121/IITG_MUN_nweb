@@ -162,6 +162,10 @@ const Home = () => {
                         <h4>Gift Partner</h4>
                         <img src={require('../assets/sundaram logo.png')} alt='not_found'></img>
                     </div>
+                    <div className="rev" data-aos="fade-up">
+                        <h4>Education Partner</h4>
+                        <img src={require('../assets/henry_harvin_logo.png')} alt='not_found'></img>
+                    </div>
                 </div>
             </div>
         </div>
