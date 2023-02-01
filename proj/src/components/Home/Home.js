@@ -81,7 +81,7 @@ const Home = () => {
                 <div className="stat">
                     <h2>{counter &&<CountUp className="counting"start={0} end={800} duration={1.2} delay={0.2} />}+</h2>
                     <h4>Delegates</h4>
-                    <h5>From all over india</h5>
+                    <h5>From all over India</h5>
                 </div>
                 <div className="stat">
                     <h2>{counter &&<CountUp className="counting"start={0} end={45} duration={1.2} delay={0.2} />}+</h2>
