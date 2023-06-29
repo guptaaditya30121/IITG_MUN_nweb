@@ -6,6 +6,8 @@
 The Official Website for IIT-G MUN displays information about our team, our Alumni, what we do and many more.
 This website is hosted [LINK](https://iitgmun.alcheringa.in/)
 
+---
+
 ## Key Features
 Some key features of the site are:
 - Responsive Design
@@ -34,3 +36,7 @@ npm install
 ```bash
 npm start
 ```
+
+## Developer's Info
+
+- For Developer's Info, visit our [website](https://iitgmun.alcheringa.in/)
