@@ -25,7 +25,7 @@ Some key features of the site are:
 
 ---
 
-#### Home 
+#### [Home](https://iitgmun.alcheringa.in/) 
 -This is the landing page of our website. At the top, you will see Navbar from where you can go to different pages and on the right, 
 you will see a button on pressing it. You can toggle between light mode and dark mode.
 
