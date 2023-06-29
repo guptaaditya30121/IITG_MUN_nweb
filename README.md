@@ -12,14 +12,14 @@ Some key features of the site are:
 - Light and Dark Mode
 - Previous Editions
 - Gallery
-- Google Forms to accept applications and much more....
+- Google Forms to accept applications and much more...
 
 ## Technologies
 
-- Front End: React JS and few libraries (+ AOS , react-count-up 
-- Back End: Django ( + allauth, ckeditor, crispy-forms, pillow and few other python libraries)
+- Front End: React JS and a few libraries (+ AOS, react-count-up, react-scroll-trigger) and Mutation Observer API , Google Maps API
+- Back End: Sanity.io
 
-[Back To The Top](#movrev)
+
 
 ---
 
