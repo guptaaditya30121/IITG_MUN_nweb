@@ -25,6 +25,23 @@ Some key features of the site are:
 
 ---
 
+#### Home 
+-This is the landing page of our website. At the top, you will see Navbar from where you can go to different pages and on the right, 
+you will see a button on pressing it. You can toggle between light mode and dark mode.
+
+----
+
+#### About us
+-This page contains info about IIT-G MUN
+
+----
+
+#### Apply
+-This page provides the link to the Google form to apply for the conference.
+
+----
+
+
 # Installation
 
 - Step 1: Clone this repository into your local machine. (See [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository))
