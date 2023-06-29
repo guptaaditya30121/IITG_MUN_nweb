@@ -31,16 +31,33 @@ you will see a button on pressing it. You can toggle between light mode and dark
 
 ----
 
-#### About us
+#### [About us](https://iitgmun.alcheringa.in/about-us)
 -This page contains info about IIT-G MUN
 
 ----
 
-#### Apply
+#### [Apply](https://iitgmun.alcheringa.in/apply)
 -This page provides the link to the Google form to apply for the conference.
 
 ----
 
+#### [Secretariat](https://iitgmun.alcheringa.in/secretariat)
+-This page contains information about our team and our alums.
+
+----
+
+####[Previous Editions](https://iitgmun.alcheringa.in/previous-editions)
+-This contains information about our previous editions
+
+----
+
+####[Gallery](https://iitgmun.alcheringa.in/gallery)
+-This page contains images of the previous editions
+
+----
+
+####[Contact-Us](https://iitgmun.alcheringa.in/contact-us)
+-This page contains our contact information
 
 # Installation
 
@@ -56,4 +73,4 @@ npm start
 
 ## Developer's Info
 
-- For Developer's Info, visit our [website](https://iitgmun.alcheringa.in/)
+- For Developer's Info, visit our [website](https://iitgmun.alcheringa.in/) and see the footer
