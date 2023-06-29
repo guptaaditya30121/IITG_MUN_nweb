@@ -46,18 +46,18 @@ you will see a button on pressing it. You can toggle between light mode and dark
 
 ----
 
-####[Previous Editions](https://iitgmun.alcheringa.in/previous-editions)
--This contains information about our previous editions
+#### [Previous Editions](https://iitgmun.alcheringa.in/previous-editions)
+-This contains information about our previous editions.
 
 ----
 
-####[Gallery](https://iitgmun.alcheringa.in/gallery)
--This page contains images of the previous editions
+#### [Gallery](https://iitgmun.alcheringa.in/gallery)
+-This page contains images of the previous editions.
 
 ----
 
-####[Contact-Us](https://iitgmun.alcheringa.in/contact-us)
--This page contains our contact information
+#### [Contact-Us](https://iitgmun.alcheringa.in/contact-us)
+-This page contains our contact information.
 
 # Installation
 
